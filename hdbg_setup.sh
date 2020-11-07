@@ -11,5 +11,6 @@ git clone https://github.com/pwndbg/pwndbg.git && cd pwndbg && ./setup.sh
 pip3 install pwntools regex
 sudo gem install one_gadget
 
+wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
 unzip ghidra_9.1.2_PUBLIC_20200212.zip
 cd ghidra_9.1.2_PUBLIC
