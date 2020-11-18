@@ -12,7 +12,8 @@ git clone https://github.com/pwndbg/pwndbg.git && cd pwndbg && ./setup.sh
 pip3 install pwntools regex
 sudo gem install one_gadget
 
-wget -P ~ https://git.io/.gdbinit
+cp .gdbinit ../gdbinit
+
 pip3 install pygments
 
 # install valgrind
