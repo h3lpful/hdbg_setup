@@ -12,7 +12,7 @@ git clone https://github.com/pwndbg/pwndbg.git && cd pwndbg && ./setup.sh
 pip3 install pwntools regex
 sudo gem install one_gadget
 
-cp .gdbinit ../gdbinit
+cp .gdbinit ../.gdbinit
 
 pip3 install pygments
 
