@@ -9,8 +9,12 @@ sudo apt-get install rubygems
 
 #install pwndbg & other tools
 git clone https://github.com/pwndbg/pwndbg.git && cd pwndbg && ./setup.sh
+cd ..
 pip3 install pwntools regex
 sudo gem install one_gadget
+
+#get splitmind
+git clone https://github.com/jerdna-regeiz/splitmind
 
 cp .gdbinit ../.gdbinit
 
@@ -18,14 +22,17 @@ pip3 install pygments
 
 # install valgrind
 sudo apt install -y valgrind
+
 # ensure 32-bit libc debug lib is installed
 sudo apt install -y libc6-dbg:i386 
 
 # install wireshark
 sudo apt install -y wireshark
+
 # yes - should superusers be able to capture packets
 sudo dpkg-reconfigure wireshark-common
 sudo usermod -a -G wireshark $USER
+
 # need to restart in order for non-super user packet capture
 
 # install netcat
@@ -52,9 +59,6 @@ cd /bin/
 sudo wget http://www.trapkit.de/tools/checksec.sh
 sudo mv checksec.sh checksec
 sudo chmod +x checksec
-
-# install vscode
-sudo snap install --classic code
 
 #install intel manual
 https://software.intel.com/content/dam/develop/public/us/en/documents/325462-sdm-vol-1-2abcd-3abcd.pdf
