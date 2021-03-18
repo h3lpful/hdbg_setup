@@ -1,9 +1,9 @@
-source /home/helpful/hdbg_setup/pwndbg/gdbinit.py
+source ~/pwndbg/gdbinit.py
 
 set context-clear-screen on
 set follow-fork-mode parent
 
-source /home/helpful/hdbg_setup/splitmind/gdbinit.py
+source ~/splitmind/gdbinit.py
 
 
 
