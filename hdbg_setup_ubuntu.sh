@@ -18,7 +18,7 @@ sudo apt install -y python2 ipython3 python3-pip
 sudo apt install -y openjdk-11-jdk openjdk-11-jre-headless
 
 #dev tools
-sudo apt install -y vim tmux valgrind
+sudo apt install -y vim tmux valgrind docker docker.io
 
 #ruby for reasons...
 sudo apt install -y ruby-full
@@ -33,7 +33,8 @@ sudo ln -s $PWD/.local/bin/* /bin/
 sudo gem install one_gadget
 
 #pwndbg install
-git clone https://github.com/pwndbg/pwndbg.git && ./pwndbg/setup.sh
+git clone https://github.com/pwndbg/pwndbg.git
+~/pwndbg/setup.sh
 
 #split mind for cool and helpful gdb looks
 git clone https://github.com/jerdna-regeiz/splitmind
