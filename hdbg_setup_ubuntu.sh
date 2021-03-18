@@ -27,14 +27,16 @@ sudo apt install -y ruby-full
 pip3 install pwntools regex pygments
 
 #symlink all pwn binaries and other goodies
-sudo ln -s $PWD/.local/bin/* /bin/
+sudo ln -s ~/.local/bin/* /bin/
 
 #one_gadget for the rops
 sudo gem install one_gadget
 
 #pwndbg install
 git clone https://github.com/pwndbg/pwndbg.git
-~/pwndbg/setup.sh
+cd ~/pwndbg
+./setup.sh
+cd ~
 
 #split mind for cool and helpful gdb looks
 git clone https://github.com/jerdna-regeiz/splitmind
