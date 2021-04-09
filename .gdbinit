@@ -1,3 +1,7 @@
+set disassembly-flavor intel
+set disassemble-next-line on
+show disassemble-next-line
+
 source ~/pwndbg/gdbinit.py
 
 set context-clear-screen on
@@ -10,10 +14,10 @@ source ~/splitmind/gdbinit.py
 python
 import splitmind
 (splitmind.Mind()
-    .above(display="backtrace")
-    .right(display="stack", size="80%")
-    .right(display="regs")
-    .right(of="main", display="disasm")
+    .right( display="stack", size="65%")
+    .right(display="disasm")
+    .above(of="main", display="backtrace", size="25%")
+    .below(of="stack",display="regs")
     .show("legend", on="disasm")
 ).build()
 end
@@ -21,4 +25,3 @@ end
 set context-code-lines 30
 set context-source-code-lines 30
 set context-sections "regs args code disasm stack backtrace"
-
