@@ -42,11 +42,7 @@ cd ~
 git clone https://github.com/jerdna-regeiz/splitmind
 
 #ghidra install
-wget https://ghidra-sre.org/ghidra_9.2_PUBLIC_20201113.zip
-unzip ghidra_9.2_PUBLIC_20201113.zip
-rm ghidra_9.2_PUBLIC_20201113.zip
-sudo mv ghidra_9.2_PUBLIC /opt/ghidra
-sudo ln -s /opt/ghidra/ghidraRun /bin/ghidra
+sudo apt-get install -y ghidra ghidra-data
 
 #wireshark install (not sure if second line is necessary)
 sudo apt install -y wireshark
